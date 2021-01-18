@@ -11,8 +11,8 @@ class TodosController < ApplicationController
   end
 
   def create
-    @project.todos.create! todo_params
-    json_response @project, :created
+    todo = @project.todos.create! todo_params
+    json_response todo, :created
   end
 
   def update
