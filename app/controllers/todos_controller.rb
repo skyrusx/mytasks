@@ -17,7 +17,7 @@ class TodosController < ApplicationController
 
   def update
     @todo.update todo_params
-    head :no_content
+    json_response @todo
   end
 
   def destroy
