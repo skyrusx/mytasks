@@ -3,11 +3,9 @@
 [app-mytasks](https://app-mytasks.herokuapp.com/) - API для списка задач на Ruby on Rails.
 
 API предоставляет следующие методы:
-```
 - **GET /projects** — вернуть все проекты с задачами;
 - **POST /todos** — создать новую задачу;
 - **PATCH /projects/id/todo/id** — обновить задачу.
-```
 
 Примерная структура:
 ```
