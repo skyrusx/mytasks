@@ -4,7 +4,7 @@ class ProjectsController < ApplicationController
 
   def index
     @projects = Project.all
-    json_response @projects, :ok, {todos: {only: [:text, :is_completed]}}, [:created_at, :updated_at]
+    json_response @projects, :ok, {todos: {only: [:id, :text, :is_completed]}}, [:created_at, :updated_at]
   end
 
   def new
