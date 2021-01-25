@@ -3,7 +3,7 @@ Rails.application.routes.draw do
 
   resource :todos, only: :create
 
-  resources :projects, only: :index do
+  resources :projects, only: [:index, :create] do
     resources :todos, only: :update
   end
 end
